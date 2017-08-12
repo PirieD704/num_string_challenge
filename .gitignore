@@ -1,2 +1,11 @@
 .sass-cache/
 *.css.map
+# Logs
+logs
+*.log
+npm-debug.log*
+# Optional npm cache directory
+.npm
+# Dependency directories
+node_modules/
+jspm_packages/
