@@ -2,21 +2,26 @@ extends layout
 
 block content
   .main-wrapper
-    .left-content-wrapper
-      .inner-wrapper
-        .box.box1 Let's start with a range of numbers
-        .box.box2 Select a range between 1 and 1,000,000
-        .box.box3
-          input(type="number" name="start" min="1" max="1000000" placeholder=1)
-          | to
-          input(type="number" name="end" min="1" max="1000000" placeholder=123)
-        .box.box4 Now Select one letter of the alphabet
-        .box.box5
-          input(type="text" name="letter" maxlength="1")
-        .box.box6 one last thing
-    .right-content-wrapper
-      .right-inner-wrapper
-        .box-right
-        .box-right
-        .box-right
-        .box-right
+    .top-text-wrapper
+      .top-text Numbers as Strings
+    .bottom-wrapper
+      .left-content-wrapper
+        .inner-wrapper
+          form(action='/gotData' method='post')
+            .box.box1 Let's start with a range of numbers
+            .box.box2 Select a range between 1 and 1,000,000
+            .box.box3
+              input(type="number" name="start" value='' min="1" max="1000000" placeholder=1)
+              | to
+              input(type="number" name="end" value='' min="1" max="1000000" placeholder=123)
+            .box.box4 Now Select one letter of the alphabet
+            .box.box5
+              input(type="text" name="letter" value='' maxlength="1")
+            .box.box6 Submit your selection 
+              button(type="submit" class="button") Submit
+      .right-content-wrapper
+        .right-inner-wrapper
+          .box-right.br1 
+            p Your Number Range
+          .box-right.br2 Your Letter
+          .box-right.br3 Probability of Your Letter
