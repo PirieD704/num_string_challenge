@@ -75,7 +75,7 @@ body {
   /* line 47, ../../compass/sass/views/_input_area.sass */
   .main-wrapper .bottom-wrapper {
     display: block;
-    padding: 30px;
+    padding: 0px;
   }
 }
 @media screen and (max-width: 740px) {
