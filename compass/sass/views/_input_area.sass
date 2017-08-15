@@ -22,11 +22,14 @@ body
     align-items: center
     justify-content: center
     flex-direction: column
-    @media screen and (max-width: 740px)
+    @media screen and (max-width: 550px)
       padding: 20px
       height: 320px
+    @media screen and (max-width: 740px)
+      padding: 10px
+      height: 320px
     .top-text
-      background-color: #cf6766
+      background-color: $crimson-sky
       margin: 10px
       padding: 20px
       transform: skewx(-10deg)
@@ -37,16 +40,19 @@ body
       font-size: 18px
       width: 70%
       padding: 20px
-      background-color: #8eaebd
+      background-color: $light-blue
       transform: skewx(-10deg)
       @media screen and (max-width: 740px)
         font-size: 14px
   .bottom-wrapper
     display: flex
     align-items: center
+    @media screen and (max-width: 550px)
+      display: block
+      padding: 30px
     @media screen and (max-width: 740px)
       display: block
-      padding-top: 40px
+      padding-top: 5px 
     .left-content-wrapper
       width: 100%
       display: flex
@@ -57,20 +63,20 @@ body
       .inner-wrapper
         width: 90%
         .box
-          width: 45%
+          width: 225px
           font-size: 14px
           padding: 20px
           transform: skewx(-10deg)
         .box1
-          background-color: #031424
+          background-color: $ultramarine
           margin: auto
           margin-right: 5%
         .box2
-          background-color: #30415d
+          background-color: $indigo
           margin: auto
           margin-right: 15%
         .box3
-          background-color: #cf6766
+          background-color: $crimson-sky
           margin: auto
           margin-right: 25%
           input
@@ -78,27 +84,29 @@ body
             border: 0px solid white
             text-align: center
         .box4
-          background-color: #30415d
+          background-color: $indigo
         .box5
           width: 10%
-          background-color: #cf6766
+          background-color: $crimson-sky
           margin: auto
           margin-left: 6%
+          @media screen and (max-width: 550px)
+            width: 225px
+            input
+              width: 15px
           input
             width: 80%
             margin: auto
             border: 0px solid white
             text-align: center
         .box6
-          background-color: #031424
+          background-color: $ultramarine
           margin: auto
           margin-left: 8%
           button
             border-radius: 0px
             border: 0px solid black
-            background-color: #8eaebd
-  
-  
+            background-color: $light-blue
     .right-content-wrapper
       width: 100%
       display: flex
@@ -117,15 +125,15 @@ body
         .box-right .p2
           margin: 0px
         .br1
-          background-color: #cf6766
+          background-color: $crimson-sky
           .br1p2
             font-size: 24px
         .br2
-          background-color: #30415d
+          background-color: $indigo
           .br2p2
             font-size: 37px
         .br3
-          background-color: #8eaebd
+          background-color: $light-blue
           .br3p2
             font-size: 37px
   .footer
@@ -133,9 +141,7 @@ body
       padding: 10px
       a
         text-decoration: none
-        color: #cf6766
-      a:hover
-        cursor: pointer !important
+        color: $crimson-sky
 
 
 
