@@ -1,10 +1,24 @@
-exports.homePage = function (req, res) {
+const { letterCount }= require('../components/letterCount');
+const { buildString }= require('../components/buildString');
+
+exports.homePage = (req, res) => {
 	console.log(req.body);
-	res.render('index', { title: 'Horizon Challenge' });
+	let info = {start: '', end: '', letter: '', builtStringLength: '' , finalLetterCount: '' };
+	res.render('index', { title: 'Horizon Challenge', info});
 };
 
-exports.gotData = function (req, res) {
+exports.gotData = (req, res) => {
 	console.log(req.body);
-	const info = req.body
-	res.render('index', { title: 'Horizon Challenge', info })
+	let info = req.body;
+	//create our info object again with the return from the form
+	console.log(info);
+	// build our string and store in a variable
+	let finalWord = buildString(info.start, info.end)
+	console.log(letterCount(finalWord, 'e'))
+	console.log(finalWord.length)
+	console.log("after final word")
+	// use a ternary operator to check for error string when the range is incorrect
+	info.builtStringLength = finalWord == "enter a valid range" ? finalWord : finalWord.length;
+	info.finalLetterCount = letterCount(finalWord, info.letter)
+	res.render('index', { title: 'Horizon Challenge', info})
 }

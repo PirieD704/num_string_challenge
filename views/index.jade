@@ -3,7 +3,8 @@ extends layout
 block content
   .main-wrapper
     .top-text-wrapper
-      .top-text Numbers as Strings
+      .top-text Numbers to Strings
+      .description This app will accept an input for an ascending range between 1 and 1000000 and any single letter. It then converts each number in the range to a string, removes all spaces, and combines them to create one master string. The output is length of that string and the percentage that a given letter occurs in that string (rounded to the nearest whole number).
     .bottom-wrapper
       .left-content-wrapper
         .inner-wrapper
@@ -22,6 +23,14 @@ block content
       .right-content-wrapper
         .right-inner-wrapper
           .box-right.br1 
-            p Your Number Range
-          .box-right.br2 Your Letter
-          .box-right.br3 Probability of Your Letter
+            p.br1p1.p1.brp Total Characters
+            p.br1p2.p2.brp #{ info.builtStringLength }
+          .box-right.br2 
+            p.br2p1.p1.brp Your Letter
+            p.br2p2.p2.brp #{ info.letter ? '"' + info.letter + '"' : '' }
+          .box-right.br3 
+            p.br3p1.p1.brp Probability
+            p.br3p2.p2.brp #{ (info.finalLetterCount / info.builtStringLength) ? (Math.round((info.finalLetterCount / info.builtStringLength) * 100)) + '%' : '' }
+    .footer
+      .footerText
+        p Please visit my gitHub page <a href="https://github.com/PirieD704/num_string_challenge">here</a> to see how it works

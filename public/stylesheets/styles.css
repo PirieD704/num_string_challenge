@@ -1,126 +1,210 @@
-/* line 6, ../../compass/sass/views/_input_area.sass */
+/* line 5, ../../compass/sass/views/_input_area.sass */
+body {
+  background-color: #064787;
+}
+
+/* line 7, ../../compass/sass/views/_input_area.sass */
 .main-wrapper {
   background-image: url("../images/horizon.jpg");
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
-  font-family: Helvetica;
+  font-family: "Exo", Helvetica;
   height: 100vh;
   text-align: center;
   justify-content: center;
 }
-/* line 16, ../../compass/sass/views/_input_area.sass */
+/* line 17, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .top-text-wrapper {
-  border: 2px solid green;
   font-size: 30px;
   text-align: center;
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-/* line 21, ../../compass/sass/views/_input_area.sass */
+@media screen and (max-width: 740px) {
+  /* line 17, ../../compass/sass/views/_input_area.sass */
+  .main-wrapper .top-text-wrapper {
+    padding: 20px;
+    height: 320px;
+  }
+}
+/* line 28, ../../compass/sass/views/_input_area.sass */
+.main-wrapper .top-text-wrapper .top-text {
+  background-color: #cf6766;
+  margin: 10px;
+  padding: 20px;
+  transform: skewx(-10deg);
+}
+@media screen and (max-width: 550px) {
+  /* line 28, ../../compass/sass/views/_input_area.sass */
+  .main-wrapper .top-text-wrapper .top-text {
+    padding: 10px;
+    font-size: 24px;
+  }
+}
+/* line 36, ../../compass/sass/views/_input_area.sass */
+.main-wrapper .top-text-wrapper .description {
+  font-size: 18px;
+  width: 70%;
+  padding: 20px;
+  background-color: #8eaebd;
+  transform: skewx(-10deg);
+}
+@media screen and (max-width: 740px) {
+  /* line 36, ../../compass/sass/views/_input_area.sass */
+  .main-wrapper .top-text-wrapper .description {
+    font-size: 14px;
+  }
+}
+/* line 44, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper {
   display: flex;
   align-items: center;
 }
-/* line 24, ../../compass/sass/views/_input_area.sass */
+@media screen and (max-width: 740px) {
+  /* line 44, ../../compass/sass/views/_input_area.sass */
+  .main-wrapper .bottom-wrapper {
+    display: block;
+    padding-top: 40px;
+  }
+}
+/* line 50, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper {
   width: 100%;
   display: flex;
-  border: 2px solid red;
   border-radius: 5px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-/* line 32, ../../compass/sass/views/_input_area.sass */
+/* line 57, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper {
   width: 90%;
 }
-/* line 34, ../../compass/sass/views/_input_area.sass */
+/* line 59, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper .box {
   width: 45%;
   font-size: 14px;
   padding: 20px;
   transform: skewx(-10deg);
 }
-/* line 39, ../../compass/sass/views/_input_area.sass */
+/* line 64, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper .box1 {
   background-color: #031424;
   margin: auto;
   margin-right: 5%;
 }
-/* line 43, ../../compass/sass/views/_input_area.sass */
+/* line 68, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper .box2 {
   background-color: #30415d;
   margin: auto;
   margin-right: 15%;
 }
-/* line 47, ../../compass/sass/views/_input_area.sass */
+/* line 72, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper .box3 {
   background-color: #cf6766;
   margin: auto;
   margin-right: 25%;
 }
-/* line 51, ../../compass/sass/views/_input_area.sass */
+/* line 76, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper .box3 input {
   margin: 0px 10px;
   border: 0px solid white;
   text-align: center;
 }
-/* line 55, ../../compass/sass/views/_input_area.sass */
+/* line 80, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper .box4 {
   background-color: #30415d;
 }
-/* line 57, ../../compass/sass/views/_input_area.sass */
+/* line 82, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper .box5 {
   width: 10%;
   background-color: #cf6766;
   margin: auto;
   margin-left: 6%;
 }
-/* line 62, ../../compass/sass/views/_input_area.sass */
+/* line 87, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper .box5 input {
   width: 80%;
   margin: auto;
   border: 0px solid white;
   text-align: center;
 }
-/* line 67, ../../compass/sass/views/_input_area.sass */
+/* line 92, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper .box6 {
   background-color: #031424;
   margin: auto;
   margin-left: 8%;
 }
-/* line 71, ../../compass/sass/views/_input_area.sass */
+/* line 96, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .left-content-wrapper .inner-wrapper .box6 button {
   border-radius: 0px;
   border: 0px solid black;
   background-color: #8eaebd;
 }
-/* line 77, ../../compass/sass/views/_input_area.sass */
+/* line 102, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .right-content-wrapper {
-  border: 2px solid yellow;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* line 84, ../../compass/sass/views/_input_area.sass */
+/* line 108, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .right-content-wrapper .right-inner-wrapper .box-right {
   width: 150px;
   height: 100px;
   margin: 20px;
+  transform: skewx(-10deg);
+  display: flex;
+  flex-direction: column;
 }
-/* line 88, ../../compass/sass/views/_input_area.sass */
+/* line 115, ../../compass/sass/views/_input_area.sass */
+.main-wrapper .bottom-wrapper .right-content-wrapper .right-inner-wrapper .box-right .p1 {
+  margin: 10px;
+}
+/* line 117, ../../compass/sass/views/_input_area.sass */
+.main-wrapper .bottom-wrapper .right-content-wrapper .right-inner-wrapper .box-right .p2 {
+  margin: 0px;
+}
+/* line 119, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .right-content-wrapper .right-inner-wrapper .br1 {
   background-color: #cf6766;
 }
-/* line 90, ../../compass/sass/views/_input_area.sass */
+/* line 121, ../../compass/sass/views/_input_area.sass */
+.main-wrapper .bottom-wrapper .right-content-wrapper .right-inner-wrapper .br1 .br1p2 {
+  font-size: 24px;
+}
+/* line 123, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .right-content-wrapper .right-inner-wrapper .br2 {
   background-color: #30415d;
 }
-/* line 92, ../../compass/sass/views/_input_area.sass */
+/* line 125, ../../compass/sass/views/_input_area.sass */
+.main-wrapper .bottom-wrapper .right-content-wrapper .right-inner-wrapper .br2 .br2p2 {
+  font-size: 37px;
+}
+/* line 127, ../../compass/sass/views/_input_area.sass */
 .main-wrapper .bottom-wrapper .right-content-wrapper .right-inner-wrapper .br3 {
   background-color: #8eaebd;
+}
+/* line 129, ../../compass/sass/views/_input_area.sass */
+.main-wrapper .bottom-wrapper .right-content-wrapper .right-inner-wrapper .br3 .br3p2 {
+  font-size: 37px;
+}
+/* line 132, ../../compass/sass/views/_input_area.sass */
+.main-wrapper .footer .footerText {
+  padding: 10px;
+}
+/* line 134, ../../compass/sass/views/_input_area.sass */
+.main-wrapper .footer .footerText a {
+  text-decoration: none;
+  color: #cf6766;
+}
+/* line 137, ../../compass/sass/views/_input_area.sass */
+.main-wrapper .footer .footerText a:hover {
+  cursor: pointer !important;
 }
 
 /* line 23, ../../compass/sass/styles.sass */

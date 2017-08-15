@@ -5,7 +5,8 @@
 //this replaces the need for a try catch if we were to set up for passing data to and from a database.
 exports.catchErrors = (fn) => {
   return function(req, res, next) {
-    return fn(req, res, next).catch(next);
+    // return fn(req, res, next).catch(next);
+    return "You had an error";
   };
 };
 

@@ -6,7 +6,7 @@ const { catchErrors } = require('../handlers/errorHandlers');
 console.log(controller)
 console.log(controller.homePage)
 /* GET home page. */
-router.get('/', catchErrors(controller.homePage));
-router.post('/gotData', catchErrors(controller.gotData));
+router.get('/', controller.homePage);
+router.post('/gotData', controller.gotData);
 
 module.exports = router;

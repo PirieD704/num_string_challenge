@@ -2,29 +2,54 @@
 // _HOME.SASS
 // Home View Styling
 // -------------------------------
-
+body
+  background-color: #064787
 .main-wrapper
   background:
     image: url('../images/horizon.jpg')
     position: center
     repeat: no-repeat
   color: #fff
-  font-family: Helvetica
+  font-family: 'Exo', Helvetica
   height: 100vh
   text-align: center
   justify-content: center
   .top-text-wrapper
-    border: 2px solid green
     font-size: 30px
     text-align: center
     height: 300px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    @media screen and (max-width: 740px)
+      padding: 20px
+      height: 320px
+    .top-text
+      background-color: #cf6766
+      margin: 10px
+      padding: 20px
+      transform: skewx(-10deg)
+      @media screen and (max-width: 550px)
+        padding: 10px
+        font-size: 24px
+    .description
+      font-size: 18px
+      width: 70%
+      padding: 20px
+      background-color: #8eaebd
+      transform: skewx(-10deg)
+      @media screen and (max-width: 740px)
+        font-size: 14px
   .bottom-wrapper
     display: flex
     align-items: center
+    @media screen and (max-width: 740px)
+      display: block
+      padding-top: 40px
     .left-content-wrapper
       width: 100%
       display: flex
-      border: 2px solid red
       border-radius: 5px
       align-items: center
       flex-direction: column
@@ -75,7 +100,6 @@
   
   
     .right-content-wrapper
-      border: 2px solid yellow
       width: 100%
       display: flex
       align-items: center
@@ -85,12 +109,34 @@
           width: 150px
           height: 100px
           margin: 20px
+          transform: skewx(-10deg)
+          display: flex
+          flex-direction: column
+        .box-right .p1
+          margin: 10px
+        .box-right .p2
+          margin: 0px
         .br1
           background-color: #cf6766
+          .br1p2
+            font-size: 24px
         .br2
           background-color: #30415d
+          .br2p2
+            font-size: 37px
         .br3
           background-color: #8eaebd
+          .br3p2
+            font-size: 37px
+  .footer
+    .footerText
+      padding: 10px
+      a
+        text-decoration: none
+        color: #cf6766
+      a:hover
+        cursor: pointer !important
+
 
 
 
