@@ -15,6 +15,7 @@ exports.gotData = (req, res) => {
 	// build our string and store in a variable
 	let finalWord = buildString(info.start, info.end)
 	console.log(letterCount(finalWord, info.letter))
+	console.log(finalWord)
 	console.log(finalWord.length)
 	console.log("after final word")
 	// use a ternary operator to check for error string when the range is incorrect

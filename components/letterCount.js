@@ -6,8 +6,8 @@ exports.letterCount = (word, letter) => {
   if (!letter) {
   	return "Enter a letter"
   } else {
-    const regex = new RegExp(letter + "+", "gi");
-    const finalAmount = word.split(regex).length;
+    const regex = new RegExp(letter, "gi");
+    const finalAmount = word.match(regex).length;
     return finalAmount;	
   }
 };
