@@ -8,7 +8,7 @@ For this coding challenge, I chose to develop a node-based web application that 
 3. SASS CSS Preprocessor
 4. Hosted on AWS - Linux Version - Ubuntu
 
-[Link to working demo](www.davidapirie.com:3010)
+[www.davidapirie.com:3010](www.davidapirie.com:3010)
 
 
 ### Relavent Code

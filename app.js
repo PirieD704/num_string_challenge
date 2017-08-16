@@ -5,11 +5,8 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const errorHandlers = require('./handlers/errorHandlers');
-const { letterCount } = require('./components/letterCount');
-const { buildString } = require('./components/buildString')
 
 const index = require('./routes/index');
-const users = require('./routes/users');
 
 const app = express();
 
